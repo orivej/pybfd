@@ -865,7 +865,7 @@ pybfd_get_bfd_attribute(PyObject *self, PyObject *args) {
             break;
 
         case MY_ARCHIEVE:
-            result = Py_BuildValue("i", bfd_my_archive(abfd));
+            result = Py_BuildValue("i", abfd->my_archive);
             break;
 
         case HAS_MAP:
